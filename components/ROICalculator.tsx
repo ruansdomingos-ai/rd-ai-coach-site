@@ -197,7 +197,7 @@ const ROICalculator = () => {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.5 }}
-              onClick={() => window.open('https://calendly.com', '_blank')}
+              onClick={() => window.open('https://calendly.com/rdaicoach', '_blank')}
               className="w-full bg-gradient-to-r from-primary to-accent hover:from-accent hover:to-primary text-white font-bold py-4 rounded-lg transition-all duration-300 text-lg"
             >
               🚀 Quero Uma Demonstração Grátis
