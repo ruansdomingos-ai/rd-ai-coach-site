@@ -5,8 +5,12 @@ import { useState } from 'react'
 import PhoneMockup from '@/components/PhoneMockup'
 
 const Hero = () => {
+  const handleWhatsApp = () => {
+    window.open('https://wa.me/5531973649974?text=Olá%20Ruan%20%F0%9F%91%8B%20Gostaria%20de%20saber%20mais%20sobre%20o%20RD%20AI%20COACH', '_blank')
+  }
+
   const handleCalendly = () => {
-    window.open('https://calendly.com', '_blank')
+    window.open('https://calendly.com/rdaicoach', '_blank')
   }
 
   return (
@@ -54,12 +58,12 @@ const Hero = () => {
               >
                 Agendar Demonstração
               </button>
-              <a
-                href="#demo-app"
+              <button
+                onClick={handleWhatsApp}
                 className="border-2 border-primary text-primary hover:bg-primary hover:text-white font-bold py-4 px-8 rounded-lg transition-all duration-300"
               >
-                Ver Demo do App
-              </a>
+                💬 Falar no WhatsApp
+              </button>
             </motion.div>
 
             {/* Trust Badges */}
